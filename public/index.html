@@ -16,13 +16,13 @@
         <div class="main-menu">
           <!-- instagram text -->
           <div id="instagram-writing">
-            <a href="#"><img src="./images/main-menu/instagram-writing.png" width="110" height="30"></a>          
+            <a href="#"><img src="./images/main-menu/instagram-writing.png" width="105" height="28"></a>          
           </div> 
           <!-- find box -->
           <div id="find-container">
             <span id="magnifier"><img src="./images/main-menu/magnifier.svg" width="11" height="11"></span>
-            <span><input id="find-box" placeholder="Tìm kiếm"></input></span>
-            <span id="find-cancel"><img src="./images/main-menu/cancel.svg" width="11" height="11"></span>
+            <span><input id="find-box" autocomplete="on" placeholder="Tìm kiếm"></input></span>
+            <span id="find-cancel" ><img src="./images/main-menu/cancel.svg" width="11" height="11"></span>
           </div>
           <!-- home, explore, user... -->
           <div class="navigator">
@@ -38,8 +38,36 @@
             <span class="icon">
               <a href="#"><img src="./images/main-menu/heart.svg" width="22" height="25"></a>
             </span>
-            <span class="icon">
-              <img src="" id="user-avatar" width="22" height="25">
+            <span class="icon" id="user-avatar-container">
+              <img src="./images/avatar/user-avatar.png" id="user-avatar" width="22" height="22">
+              <div id="user-menu">
+                <a href="#" class="option-link">
+                  <div class="user-menu-option">
+                    <span class="user-menu-icon"><img src="./images/main-menu/user.svg" width="20" height="15"></span>
+                    <span class="user-menu-text">Trang cá nhân</span>
+                  </div>
+                </a>
+                
+                <a href="#" class="option-link">
+                  <div class="user-menu-option">
+                    <span class="user-menu-icon"><img src="./images/main-menu/saved-nofill.svg" width="20" height="15"></span>
+                    <span class="user-menu-text">Đã lưu</span>
+                </div>
+                </a>
+
+                <a href="#" class="option-link">
+                  <div class="user-menu-option">
+                    <span class="user-menu-icon"><img src="./images/main-menu/gear.svg" width="20" height="15"></span>
+                    <span class="user-menu-text">Cài đặt</span>                    
+                  </div>
+                </a>
+                
+                <a href="#" class="option-link">
+                  <div class="user-menu-option">
+                    <span class="user-menu-text">Đăng xuất</span>
+                  </div>
+                </a>
+              </div>
             </span>
           </div>
         </div>
@@ -57,6 +85,8 @@
         </div>
       </div>
     </div>
+
+
     <script type="text/javascript" src="./find-box.js">
     </script>
   </body>
