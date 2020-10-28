@@ -10,3 +10,9 @@ function focusFindBox() {
 function blurFindBox() {
 	document.getElementById("find-box").blur();
 }
+
+document.getElementById("user-avatar").addEventListener("click", switchHomeIcon)
+
+function switchHomeIcon() {
+	document.getElementById("home-icon").setAttribute("src", "./images/main-menu/home-nofill.svg")
+}
