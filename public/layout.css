@@ -1,0 +1,66 @@
+:root {
+	--border: #dbdbdb;
+	--background: #FAFAFA;
+};
+html, body {
+	
+	height: 100%;
+}
+body {
+	min-width: 700px;
+/*	width: 100%;*/
+	height: 100%;
+}
+
+/*page content*/
+.page {
+	width: 100%;
+	height: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+/*content*/
+.page .main-container {
+	width: 100%;
+	background-color: var(--background);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 54px;
+}
+
+.main-container .content {
+	width: 975px;
+	padding-top: 30px;
+	border: 2px solid black;
+}
+
+.content .feed {
+	width: 614px;
+	float: left;
+	margin-right: 28px;
+	border: 1px solid blue;
+}
+
+.content .info {
+	width: 293px;
+	height: 436px;
+	float: right;
+	top: 84px;
+	right: 0px;
+	border: 1px solid blue;
+}
+
+
+@media screen and (max-width: 640px) {
+	#find-container {
+		display: none;
+	}
+}
