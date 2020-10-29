@@ -10,10 +10,14 @@
 	flex-direction: column;
 	align-items: flex-start;
 }
-
+#info>.info-user>div>a>img {
+	border-color: transparent;
+}
 
 .avatar {
+	border: 2px solid #333;
 	border-radius: 100px;
+	padding: 2px;
 	cursor: pointer;
 }
 /*info-user box*/
@@ -31,11 +35,15 @@
 	flex-direction: column;
 	justify-content: center;
 }
-.info-user > .info-detail > .account-name > a {
+/*highlight account-name*/
+.account-name > a {
 	text-decoration: none;
 	font-size: 0.8rem;
 	color: var(--black-text);
 	font-weight: bold;
+}
+.account-name>a:hover {
+	text-decoration: underline;
 }
 .info-user > .info-detail > .user-name {
 	text-transform: capitalize;
@@ -80,6 +88,7 @@
 #follow>.info-user>.info-detail>.account-name>a {
 	font-size: 0.7rem;
 }
+
 #follow>.info-user>.info-detail>.follow-status {
 	color: var(--gray-text);
 	font-size:0.65rem;
@@ -97,13 +106,13 @@
 	font-family: inherit;
 	width: inherit;
 	font-size: 0.55rem;
-	line-height: 0.75rem;
+	line-height: 0.8rem;
 	word-spacing: 0.07rem;
 	margin-top: 20px;
 	color: #c7c7c7;
 	font-weight: 700;
 }
-#insta-privacy>pre>a { 
+#insta-privacy>a { 
 	color: #c7c7c7;
 	text-decoration: none;
 }

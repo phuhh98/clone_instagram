@@ -46,9 +46,8 @@ body {
 
 #feed {
 	width: 630px;
+	max-width: 630px;
 	float: left;
-	/*margin-right: 28px;*/
-	border: 1px solid blue;
 }
 
 #info {
