@@ -31,17 +31,23 @@ function clearFindBox(event) {
 
 
 //show user menu and change home-icon
-addListenerId("user-avatar-container", "click", userMenu);
-addListenerId("user-avatar-container", "mouseleave", clearUserMenu);
+var userMenuState = "hidden";
+// addListenerId("user-avatar-container", "click", userMenu);
+addListenerId("page", "click", userMenu);
 
-function userMenu(){
-	document.getElementById("user-avatar").style.border = "1.6px solid #000";
-	document.getElementById("home-icon").setAttribute("src", "./images/main-menu/home-nofill.svg")
-	getId("user-menu").style.visibility = "visible";
-}
+function userMenu(event){
+	let userAvatar = getId("user-avatar");
 
-function clearUserMenu() {
-	document.getElementById("user-avatar").style.border = "none";
-	document.getElementById("home-icon").setAttribute("src", "./images/main-menu/home.svg");
-	getId("user-menu").style.visibility = "hidden";
+	if (userMenuState == "hidden" && event.target == userAvatar) {
+		userMenuState = "visible";
+		getId("user-avatar").style.border = "1.6px solid #000";
+		getId("home-icon").setAttribute("src", "./images/main-menu/home-nofill.svg")
+		getId("user-menu").style.visibility = userMenuState;
+	} else if (userMenuState == "visible" || event.target != userAvatar) {
+		userMenuState = "hidden";
+		getId("user-avatar").style.border = "none";
+		getId("home-icon").setAttribute("src", "./images/main-menu/home.svg");
+		getId("user-menu").style.visibility = userMenuState;		
+	}
+
 }

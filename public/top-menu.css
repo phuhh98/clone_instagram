@@ -93,8 +93,8 @@
 	width: 210px;
 	height: 140px;
 	position: absolute;
-	top: 50px;
-	right: 276px;
+	top: 45px;
+	right: 278px;
 	background-color: #fff;
 	font-size: 0.7rem;
 	display: flex;
@@ -105,7 +105,7 @@
 	border-radius: 6px;
 	box-shadow: 0px 0px 15px var(--border);
 	padding: 5px 0px;
-	visibility: visible;
+	visibility: hidden;
 }
 .user-menu-option {
 	padding-left: 10px;
