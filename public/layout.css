@@ -14,7 +14,7 @@ body {
 
 /*page content*/
 #page {
-	font-family:  Roboto, Helvetica, Arial, sans-serif;
+	font-family:  Helvetica, Arial, sans-serif;
 	width: 100%;
 	height: inherit;
 	position: absolute;
@@ -38,36 +38,34 @@ body {
 }
 
 #content {
-	display: flex;
+	/*display: flex;*/
 	justify-content: center;
 	width: 975px;
 	padding-top: 30px;
 }
 
 #feed {
-	width: 614px;
+	width: 630px;
 	float: left;
-	margin-right: 28px;
+	/*margin-right: 28px;*/
 	border: 1px solid blue;
 }
 
 #info {
 	width: 293px;
-	height: 436px;
-	float: right;
+	position: fixed;
+	z-index: 1;
 	top: 84px;
-	right: 0px;
-	border: 1px solid blue;
+	right: 280px;
 }
 
 
 
 /*change feed from float right to center in window*/
-@media screen and (max-width: 1000px) {
-	#info {
-		display: none;
-	}
+@media screen and (max-width: 1020px) {
+
 	#content {
+		display: flex;
 		width: 100%;
 	}
 	#feed {

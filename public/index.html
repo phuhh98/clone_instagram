@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Instagram</title>
     <!-- tab icon -->
+    <link href="//db.onlinewebfonts.com/c/9da41c570d5a221cb2486d78769a076d?family=Neue+Helvetica" rel="stylesheet" type="text/css"/>
     <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/instagram.png">
     <link rel="stylesheet" type="text/css" href="./layout.css">
     <link rel="stylesheet" type="text/css" href="./top-menu.css">
+    <link rel="stylesheet" type="text/css" href="./info-side-bar.css">
   </head>
 
   <body>
@@ -39,7 +41,7 @@
               <a href="#"><img src="./images/main-menu/heart.svg" width="22" height="25"></a>
             </span>
             <span class="icon" id="user-avatar-container">
-              <img src="./images/avatar/user-avatar.png" id="user-avatar" width="22" height="22">
+              <img src="./images/avatar/user-avatar.png" class="avatar" id="user-avatar" width="22" height="22">
               <div id="user-menu">
                 <a href="#" class="option-link">
                   <div class="user-menu-option">
@@ -80,14 +82,35 @@
             <img src="" width="614" height="900"/>
           </div>
           <div id="info">
-            info
+            <div class="info-user" id="info-user">
+              <div><a href="#"><img class="avatar" src="./images/avatar/user-avatar.png" width="60" height="60"></a></div>
+              <div class="info-detail">
+                <div class="account-name"><a href="#">shibainu</a></div>
+                <div class="user-name">Yamada itokuwa</div>
+              </div>
+            </div>
+            <div id="follow">
+              <div id="follow-advice">
+                <div>Gợi ý cho bạn</div>
+                <div><a href="#">Xem tất cả</a></div>
+              </div>
+            </div>
+            <div id="insta-privacy">
+              <pre>
+<a href="#">Giới thiệu</a>&middot<a href="#">Trợ giúp</a>&middot<a href="#">Báo chí</a>&middot<a href="#">API</a>&middot<a href="#">Việc làm</a>&middot
+<a href="#">Quyền riêng tư</a>&middot<a href="#">Điều khoản</a>&middot<a href="#">Vị trí</a>&middot
+<a href="#">Tài khoản liên quan nhất</a>&middot<a href="#">Hashtag</a>&middot<a href="#">Ngôn ngữ</a>
+
+&copy INSTAGRAM FROM FACEBOOK
+              </pre>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
 
-    <script type="text/javascript" src="./find-box.js">
-    </script>
+    <script type="text/javascript" src="./top-menu.js"></script>
+    <script type="text/javascript" src="./info-side-bar.js"></script>
   </body>
 </html>
