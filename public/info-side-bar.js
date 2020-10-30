@@ -81,6 +81,12 @@ for (let index = 0; index < follow_buttons.length; index++) {
 
 function followed(event) {
 	let button = event.target;
-	button.innerHTML = "Đang theo dõi";
-	button.style.color = "#222";
+	if (button.innerHTML == "Theo dõi") {
+		button.innerHTML = "Đang theo dõi";
+		button.style.color = "#222";
+	} else {
+		button.innerHTML = "Theo dõi";
+		button.style.color = "#28A0F5";
+	}
+
 }
