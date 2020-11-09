@@ -9,6 +9,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	right: 450px;
 }
 #info>.info-user>div>a>img {
 	border-color: transparent;
@@ -145,6 +146,26 @@
 
 
 /*change position of info box when resizing brower window*/
+@media screen and (max-width: 1900px) {
+	#info {
+		right: 400px;
+	}
+}
+@media screen and (max-width: 1800px) {
+	#info {
+		right: 350px;
+	}
+}
+@media screen and (max-width: 1700px) {
+	#info {
+		right: 300px;
+	}
+}
+@media screen and (max-width: 1600px) {
+	#info {
+		right: 250px;
+	}
+}
 @media screen and (max-width: 1500px) {
 	#info {
 		right: 200px;
